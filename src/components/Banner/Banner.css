@@ -1,0 +1,169 @@
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+.primary-btn {
+  color: white;
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #1f2235;
+}
+.primary-btn:hover {
+  color: aliceblue;
+  border: 2px solid #ff5823;
+  background-color: #1f2235;
+}
+.highlighted-btn {
+  color: white;
+  font-size: 12px;
+  background-color: #ff5823;
+}
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+.red-border {
+  border: 1px solid #e44f4fd1 !important;
+}
+.banner-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  min-height: fit-content;
+  background-color: #1f2235;
+  margin-top: 100px;
+}
+.banner-parent {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+.banner-details-name {
+  font-size: 24px;
+  font-family: "Poppins SemiBold";
+}
+.banner-details-role {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+.banner-details-role h1 {
+  font-size: 40px;
+  font-family: cursive;
+}
+.primary-text {
+  color: "white";
+}
+.highlighted-text {
+  font-family: "Poppins", sans-serif;
+  color: #ff5823;
+}
+.banner-role-tagline {
+  font-size: 19px;
+  margin: 5px 0 0 0;
+  font-family: "Poppins Light";
+}
+.banner-options .highlighted-btn {
+  margin: 0 0 0 28px;
+}
+.banner-options .highlighted-btn:hover {
+  margin: 0 0 0 28px;
+  background-color: cornsilk;
+  color: #111;
+}
+.banner-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px white;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+.banner-picture-background {
+  height: 92%;
+  width: 92%;
+  background-image: url("/public/images/masood.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner-picture-background:hover {
+  transform: scale(1.07);
+  transition: 1s ease-out;
+}
+.col .col-icon i {
+  color: white;
+  padding: 8px;
+  padding-left: 0px;
+}
+@media screen and (max-width: 1110px) {
+  .banner-picture {
+    margin: 0 0px 0 80px;
+  }
+  .banner-details-name {
+    font-size: 20px;
+  }
+  .banner-details-role .primary-text {
+    font-size: 12px;
+  }
+  .banner-options .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 100;
+  }
+}
+@media screen and (max-width: 910px) {
+  .banner-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .banner-picture {
+    margin: 0 !important;
+  }
+  .banner-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .banner-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  .banner-details {
+    margin: 25px 0 0;
+  }
+  .banner-options .highlighted-btn {
+    margin: 1 !important;
+  }
+  .banner-options,
+  .banner-details-role {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .banner-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  .banner-details {
+    width: 90%;
+  }
+}
